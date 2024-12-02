@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FF5722"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMDMARKET"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALTERAR PRODUTO"
+            android:textSize="18sp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Código do Produto"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etCodigoProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Insira o código do produto"
+        android:padding="8dp"
+        android:importantForAccessibility="yes" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do Produto"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etNomeProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Insira o nome do produto"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descrição do Produto"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etDescricaoProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Insira a descrição do produto"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estoque"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etEstoque"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Insira a quantidade no estoque"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/btnAlterar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Alterar"
+            android:textColor="@color/white"
+            android:background="#FF5722"
+            android:padding="12dp" />
+
+
+        <Button
+            android:id="@+id/btnLimpar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Limpar"
+            android:textColor="@color/white"
+            android:background="#FFEBEE"
+            android:padding="12dp"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+</LinearLayout>
