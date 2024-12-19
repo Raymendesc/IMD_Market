@@ -12,30 +12,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IMD_Market"
         tools:targetApi="31">
+
+
         <activity
-            android:name=".ActivityExcluir"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityListagem"
-            android:exported="false" />
-        <activity
-            android:name=".Activity_Alteracao"
-            android:exported="false" />
-        <activity
-            android:name=".CadastroActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityMenu"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
+            android:name=".ActivityLogin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity
+            android:name=".ActivityMenu"
+            android:exported="true" />
+
+        <activity
+            android:name=".ActivityListagem"
+            android:exported="true" />
+
+        <activity
+            android:name=".ActivityAlteracao"
+            android:exported="true" />
+
+        <activity
+            android:name=".ActivityExcluir"
+            android:exported="true" />
+
+        <activity
+            android:name=".ActivityCadastro"
+            android:exported="true" />
+
     </application>
 
 </manifest>
